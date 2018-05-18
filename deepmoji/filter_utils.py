@@ -122,7 +122,7 @@ def separate_emojis_and_text(text):
 
 def extract_emojis(text, wanted_emojis):
     text = remove_variation_selectors(text)
-    return [c for c in text if c in wanted_emojis]
+    return [c for c in wanted_emojis if c in text]
 
 
 def remove_variation_selectors(text):
